@@ -26,7 +26,8 @@ your_project/
 ├── your_script.py          # Your training script
 ├── config/                 # Directory for configuration files
 │   └── config.yaml         # Your YAML configuration file
-└── optuna_studies/         # Directory for Optuna study databases (will be created automatically)
+├── optuna_studies/         # Directory for Optuna study databases (will be created automatically)
+└── hparam_search.py        # File in this repo
 ```
 
 ## Step 1: Write your training function

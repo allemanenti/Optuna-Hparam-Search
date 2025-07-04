@@ -19,6 +19,16 @@ Using the decorator involves three simple steps:
 2. creating a configuration file (`.yaml`), and 
 3. decorating your main function with `@hparam_search`.
 
+This should be your code structure:
+
+```plaintext
+your_project/
+├── your_script.py          # Your training script
+├── config/                 # Directory for configuration files
+│   └── config.yaml         # Your YAML configuration file
+└── optuna_studies/         # Directory for Optuna study databases (will be created automatically)
+```
+
 ## Step 1: Write your training function
 Your training function must accept a single dictionary argument (config) and return a single float value (the metric to be optimized, e.g., validation loss).
 
